@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-image: url('./img/Rectangle\ 58.png');
+            display: block;       
+       }
+
+        .nav__btn-color {
+            background-color: #1617DB;
+
+        }
+
+        .nav__btn-color:hover {
+            background-color: #1617DB;
+        }
+        .nav__p__hover{
+            width: 30px;
+            
+        }
+
+        .nav__p__hover:hover {
+            border-bottom: #1617DB solid;
+            cursor: pointer;
+            color: #01010D;
+            font-weight: bold;  
+         
+         
+           
+
+        }
+
+        .header__nav_span {
+            color: #1617DB;
+            font-size: 12px;
+        }
+
+        .header__h1 {
+            font-family: sans-serif;
+            font-weight: bold;
+            color: #01010D;
+            width: 65% !important;
+            font-size: 70px;
+        }
+
+        .header__nav__text_font_famile {
+            font-family: sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+        }
+
+        .header__btn__color {
+            color: #1617DB;
+        }
+
+        .img {
+            position: absolute;
+        }
+
+        .content__h1_color {
+            color: #01010D;
+            font-family: sans-serif;
+        }
+
+        .with_30 {
+            width: 32%;
+        }
+
+        .content__border__icon {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            border: 1px solid #E0E8E6;
+            border-top: 2px solid #ffffff !important;
+            transform: rotate(120deg);
+            border-right: 2px solid #E0E8E6;
+
+        }
+
+        .content__border__icon_2 {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+        }
+
+        .color__black {
+            color: #01010D;
+        }
+
+        .img__margin {
+            width: 500px;
+            height: 300px;
+            margin: 200px;
+        }
+
+        .animation_stop {
+            transform: rotate(-120deg);
+            margin: auto;
+            text-align: center;
+        }
+
+        .color__icon {
+            color: #000000;
+        }
+
+        .text_font_sizes {
+            font-weight: 700;
+            font-size: 51px;
+        }
+
+        .img__rounded {
+            border-radius: 20%;
+            border: 3px solid #CCCCCC !important;
+
+
+        }
+
+        .img__rounded__child {
+            background-color: pink;
+            border-radius: 20%;
+            position: relative;
+            overflow: hidden;
+
+        }
+
+        .img__rounded__child1 {
+            background-color: #D6D7DB;
+            border-radius: 20%;
+            position: relative;
+            overflow: hidden;
+
+        }
+
+        .img__rounded__child2 {
+            background-color: #DCD2D4;
+            border-radius: 20%;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .child {
+            position: absolute;
+            width: 144.4px;
+            height: 144.4px;
+            left: -50px;
+
+            bottom: -60px;
+            background-color: #F3F3F5;
+            border-radius: 47%;
+        }
+
+        .vido_img_bag {
+            background-color: #5BA199;
+            position: relative;
+            margin-top: 200px;
+        }
+
+        .before_child {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: #1f181879;
+
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            /* position: relative; */
+        }
+
+        .icon {
+
+            color: #1617DB;
+        }
+
+        .icon_big {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            border: 5px solid white;
+            background-color: #ffffffa9;
+        }
+
+        .margin_vido_content {
+            margin-top: 200px;
+
+        }
+
+      
+        .icon_big2 {
+            background-color: #efe8e88e;
+            border: 5px solid #CDCDCD;
+            width: 40px;
+            height: 40px;
+        }
+
+        .messeage_div {
+            background-color: #F4F4F4;
+            width: 891.84px;
+            height: 285px;
+            left: 244.76px;
+            top: 3519.98px;
+        }
+
+        .border_div {
+            border: 2px dashed #D3CFCF;
+            height: 400px;
+            margin-top: 100px;
+            width: 901.07px;
+            height: 285px;
+
+
+            border: 2px dashed #D3CFCF;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="container">
+
+            <div class="w-50 nav__pos  float-end d-flex justify-content-evenly position-relative">
+                <span class="fs-6 mt-3 nav__p__hover col-2">
+                    Home
+                </span>
+                <span class="fs-6 mt-3 nav__p__hover col-2">
+                    Feature
+                </span>
+                <span class="fs-6 mt-3 nav__p__hover col-2">
+                    Product
+                </span>
+                <span class="fs-6 mt-3 nav__p__hover col-2">Testmonial</span>
+
+                <button class="btn btn-lg nav__btn-color w-25 text-light m-2 nav__btn-color_media">
+                    GET STATED
+                </button>
+            </div>
+        </nav>
+
+        <img src="./img/pngwing (1).png" alt="" class="img ">
+      
+        
+
+        <div class="container d-flex justify-content-around  header__footer p-2">
+            <div class=" w-50 mt-5">
+                <p class="text-uppercase header__nav_span fw-bold media_header_1">
+                    Your Watch your style
+                </p>
+                <h1 class="header__h1 w-75 ">
+                    Have You Ever Worn A Real Watch.
+                </h1>
+                <p class="mt-2 w-75 p-1 fw-bold header__nav__text_font_famile">The styles of watches available to
+                    consumers are endless and profit also endless. if you are Fashion Geek and have guts to sort out
+                    need related to </p>
+                <div>
+                    <button class="btn nav__btn-color text-light hover-none m-1 nav__btn-color_media">
+                        GET STATED
+                    </button>
+                    <button class="btn border m-1 header__btn__color nav__btn-color_media">
+                        <i class="fab fa-apple"></i> gallery
+                    </button>
+                </div>
+            </div>
+            <img src="./img/pngwing.png" alt="" class="w-50 mt-5 img__header">
+        </div>
+        <br>
+        <br>
+    </header>
+    <div class="container content">
+        <div class=" text-center p-5 mt-2">
+            <h1 class="content__h1_color fw-bolder text_font_sizes ">Our service Feature</h1>
+            <p class=" m-auto content__h1_color with_30 text-center media_our">Watch companies are now focusing more on trendy
+                watches which targets the youngsters who always.</p>
+        </div>
+
+
+        <div class=" d-flex justify-content-between align-items-center">
+            <div>
+                <div>
+                    <div class=" content__border__icon  mt-5 ">
+                        <p
+                            class="content__border__icon_2 border text-center m-auto mt-1  d-flex align-items-center justify-content-around ">
+                            <img src="./img/android.png" alt="" class="w-75 animation_stop ">
+                
+                        </p>
+                    </div>
+                    <h6 class="fs-5 mt-4 m-auto color__black ">Android Version</h6>
+                    <p class=" color_black_media_p">Android officially 10.0</p>
+
+                </div>
+                <div class="">
+                    <div class=" content__border__icon mt-5">
+                        <p
+                            class="content__border__icon_2 border text-center m-auto mt-1 d-flex align-items-center justify-content-around">
+                            <i class="fas fa-globe fs-1 animation_stop color__icon"></i>
+                        </p>
+                    </div>
+                    <h6 class="fs-5 mt-4 m-auto color__black">Android Version</h6>
+                    <p class=" color_black_media_p">Android officially 10.0</p>
+
+                </div>
+
+                <div class="">
+                    <div class=" content__border__icon mt-5">
+                        <p
+                            class="content__border__icon_2 border text-center m-auto mt-1 d-flex align-items-center justify-content-around">
+                            <i class="fas fa-icons fs-1 animation_stop color__icon"></i>
+                        </p>
+                    </div>
+                    <h6 class="fs-5 mt-4 m-auto color__black">Android Version</h6>
+                    <p class=" color_black_media_p">Android officially 10.0</p>
+                </div>
+            </div>
+
+            <img src="./img/Daco_4244679 1.png" alt="" class="  img__margin">
+
+            <div>
+                <div class="">
+                    <div class=" content__border__icon mt-5">
+                        <p
+                            class="content__border__icon_2 border text-center m-auto mt-1 d-flex align-items-center justify-content-around">
+                            <i class="fas fa-battery-three-quarters fs-1 animation_stop color__icon"></i>
+                        </p>
+                    </div>
+                    <h6 class="fs-5 mt-4 m-auto color__black">Android Version</h6>
+                    <p class=" color_black_media_p">Android officially 10.0</p>
+
+                </div>
+                <div class="">
+                    <div class=" content__border__icon mt-5">
+                        <p
+                            class="content__border__icon_2 border text-center m-auto mt-1 d-flex align-items-center justify-content-around">
+                            <i class="fas fa-gear fs-1 animation_stop color__icon"></i>
+                        </p>
+                    </div>
+                    <h6 class="fs-5 mt-4 m-auto color__black">Android Version</h6>
+                    <p class=" color_black_media_p">Android officially 10.0</p>
+
+                </div>
+
+                <div class="">
+                    <div class=" content__border__icon mt-5">
+                        <p
+                            class="content__border__icon_2 border text-center m-auto mt-1 d-flex align-items-center justify-content-around">
+                            <i class="fas fa-envelope fs-1 animation_stop color__icon"></i>
+                        </p>
+                    </div>
+                    <h6 class="fs-5 mt-4 m-auto color__black">Android Version</h6>
+                    <p class=" color_black_media_p">Android officially 10.0</p>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+    <div class="container mt-5">
+        <div class="w-75">
+            <p class="header__btn__color">
+                <i class="fab fa-apple"></i> Watch</p>
+            <h1 class="content__h1_color fw-bolder text_font_sizes ">
+                Our Available Product
+            </h1>
+            <p class="content__h1_color text-dark w-50 p-2 fw-norma text_font_size_medial">
+                Watch is such a desired fashion accessory and is seen as a necessary cupboard piece for both men and
+                women. Wristwatches are generally.</p>
+        </div>
+
+        <div class="d-flex justify-content-between row gap-5 mt-5">
+            <div class="w-25 img__rounded p-1 col-4">
+                <div class="img__rounded__child position-relative">
+                    <div class="child d-flex justify-content-around align-content-around">
+                        <i class="fas fa-plus mt-4 ms-5 fs-4"></i>
+                    </div>
+                    <img src="./img/Rectangle 42.png" alt="" class=" ">
+
+                </div>
+
+            </div>
+            <div class="w-25 img__rounded p-1 col-4">
+                <div class="img__rounded__child1">
+                    <div class="child d-flex justify-content-around align-content-around">
+                        <i class="fas fa-plus mt-4 ms-5 fs-4"></i>
+                    </div>
+                    <img src="./img/Rectangle 43.png" alt="">
+                </div>
+
+            </div>
+            <div class="w-25 img__rounded p-1 col-4">
+                <div class="img__rounded__child2">
+                    <div class="child d-flex justify-content-around align-content-around">
+                        <i class="fas fa-plus mt-4 ms-5 fs-4"></i>
+                    </div>
+                    <img src="./img/Rectangle 43 (1).png" alt="">
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container vido  d-flex justify-content-between align-items-center gap-5 ">
+        <div >
+            <div class="vido_img_bag rounded-3">
+                <div class=" before_child d-flex justify-content-around align-items-center">
+                    <div class=" icon_big d-flex justify-content-around align-items-center"><i
+                            class="fas fa-play fs-2 icon"></i></div>
+                </div>
+                <img src="./img/apple-watch-4-640x387-removebg-preview 1.png" alt="" class=" img_media_vido">
+            </div>
+        </div>
+
+
+        <div>
+            <div class="margin_vido_content">
+                <h1 class="content__h1_color fw-bolder text_font_sizes w-75">The best watch for your best time.</h1>
+                <p class="content__h1_color text-dark  p-2 fw-normal w-75 p_media_">Since the watch is such a popular Fashion
+                    accessory and is seen as an essential wardrobe piece for both men and women.</p>
+                <button class="vido_btn_media_1 header__btn__color  shadow-0 btn border d-flex justify-content-around align-items-center">
+                    <div class=" icon_big icon_big2 d-flex justify-content-around align-items-center ">
+                        <i class="fas fa-play fs-5 icon"></i></div>
+                    <p class="mt-2">Play video</p>
+                </button>
+            </div>
+
+        </div>
+    </div>
+    <div class="container border_div_media">
+        <div class="  border_div  p-3 rounded-6">
+            <div class="messeage_div p-5 rounded-6 ">
+                <p class="fs-5 color__icon">For example, if someone lives in adverse conditions then they use the slogan
+                    accuracy under adverse
+                    conditions to show them their watch can fulfill their needs. Similarly, if someone likes handmade
+                    products then they use the slogan Handmade. </p>
+                <div class=" d-flex justify-content-between w-50 mt-5">
+                    <div>
+                        <h2 class="color__icon fs-4">
+                            Ronald Richards
+
+                        </h2>
+                        <p>D.M Richards</p>
+                    </div>
+
+                    <img src="./img/Rectangle 33.png" alt="" class="w-25">
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <footer class="footer-section mt-5">
+        <div class="container">
+            <div class="footer-cta ">
+          
+            <div class="footer-content pt-5 pb-5">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 mb-50">
+                        <div class="footer-widget">
+                            <div class="footer-logo">
+                              
+                            </div>
+                            <div class="footer-text">
+                                <div class="footer-widget-heading">
+                                <h3 class=" text-black">LOGO</h3>
+                                </div>
+                                <p>Apple Watch and the
+                                    app on iPhone.</p>
+                            </div>
+                            <div class="footer-social-icon">
+                                <span class="text-black">Follow us</span>
+                                <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                                <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                                <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3 class="text-black">Useful Links</h3>
+                            </div>
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">about</a></li>
+                                <li><a href="#">services</a></li>
+                                <li><a href="#">portfolio</a></li>
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">About us</a></li>
+                                <li><a href="#">Our Services</a></li>
+                                <li><a href="#">Expert Team</a></li>
+                                <li><a href="#">Contact us</a></li>
+                                <li><a href="#">Latest News</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3 class="text-black">Subscribe</h3>
+                            </div>
+                            <div class="footer-text mb-25">
+                                <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+                            </div>
+                            <div class="subscribe-form">
+                                <form action="#">
+                                    <input type="text" placeholder="Email Address">
+                                 
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- MDB -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.js"></script>
+</body>
+
+</html>
