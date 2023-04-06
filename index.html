@@ -22,30 +22,44 @@
 
         header {
             background-image: url('./img/Rectangle\ 58.png');
-            display: block;       
-       }
+
+        }
 
         .nav__btn-color {
-            background-color: #1617DB;
+            background-color: #1617DB !important;
 
         }
 
-        .nav__btn-color:hover {
-            background-color: #1617DB;
-        }
-        .nav__p__hover{
+
+
+        .nav__p__hover {
             width: 30px;
-            
+            transition: 1s linear;
+
+        }
+
+        .nav__p__hover:before {
+            content: '';
+            width: 0;
+
+            transition: 0.4s;
+
+        }
+
+        .nav__p__hover:hover:before {
+            content: '';
+            width: 80px;
+            height: 2px;
+            position: absolute;
+            bottom: 0;
+            background-color: rgb(0, 8, 255);
         }
 
         .nav__p__hover:hover {
-            border-bottom: #1617DB solid;
+
             cursor: pointer;
             color: #01010D;
-            font-weight: bold;  
-         
-         
-           
+            font-weight: bold;
 
         }
 
@@ -75,6 +89,8 @@
 
         .img {
             position: absolute;
+            top: 0;
+            z-index: -1;
         }
 
         .content__h1_color {
@@ -108,9 +124,11 @@
         }
 
         .img__margin {
-            width: 500px;
-            height: 300px;
-            margin: 200px;
+            width: 30%;
+            height: auto;
+            margin: auto;
+            display: block;
+            object-fit: cover;
         }
 
         .animation_stop {
@@ -206,7 +224,7 @@
 
         }
 
-      
+
         .icon_big2 {
             background-color: #efe8e88e;
             border: 5px solid #CDCDCD;
@@ -228,8 +246,6 @@
             margin-top: 100px;
             width: 901.07px;
             height: 285px;
-
-
             border: 2px dashed #D3CFCF;
             border-radius: 10px;
         }
@@ -240,57 +256,79 @@
     <header>
         <nav class="container">
 
-            <div class="w-50 nav__pos  float-end d-flex justify-content-evenly position-relative">
-                <span class="fs-6 mt-3 nav__p__hover col-2">
-                    Home
-                </span>
-                <span class="fs-6 mt-3 nav__p__hover col-2">
-                    Feature
-                </span>
-                <span class="fs-6 mt-3 nav__p__hover col-2">
-                    Product
-                </span>
-                <span class="fs-6 mt-3 nav__p__hover col-2">Testmonial</span>
+            <div class="d-flex justify-content-end">
+                <div class="w-50  nav__pos  d d-flex justify-content-between position-relative">
+                    <span class="fs-6 mt-3 nav__p__hover col-2">
+                        Home
+                    </span>
+                    <span class="fs-6 mt-3 nav__p__hover col-2">
+                        Feature
+                    </span>
+                    <span class="fs-6 mt-3 nav__p__hover col-2">
+                        Product
+                    </span>
+                    <span class="fs-6 mt-3 nav__p__hover col-2">Testmonial</span>
 
-                <button class="btn btn-lg nav__btn-color w-25 text-light m-2 nav__btn-color_media">
-                    GET STATED
-                </button>
+                    <button class="btn btn-lg nav__btn-color w-25 text-light m-2 nav__btn-color_media">
+                        GET STARTED
+                    </button>
+                </div>
             </div>
         </nav>
 
         <img src="./img/pngwing (1).png" alt="" class="img ">
-      
-        
 
-        <div class="container d-flex justify-content-around  header__footer p-2">
-            <div class=" w-50 mt-5">
-                <p class="text-uppercase header__nav_span fw-bold media_header_1">
-                    Your Watch your style
-                </p>
-                <h1 class="header__h1 w-75 ">
-                    Have You Ever Worn A Real Watch.
-                </h1>
-                <p class="mt-2 w-75 p-1 fw-bold header__nav__text_font_famile">The styles of watches available to
-                    consumers are endless and profit also endless. if you are Fashion Geek and have guts to sort out
-                    need related to </p>
-                <div>
-                    <button class="btn nav__btn-color text-light hover-none m-1 nav__btn-color_media">
-                        GET STATED
-                    </button>
-                    <button class="btn border m-1 header__btn__color nav__btn-color_media">
-                        <i class="fab fa-apple"></i> gallery
-                    </button>
+
+
+        <div class="container">
+
+            <div class="row g-0">
+                <div class="col-sm-6 col-12 ">
+
+                    <div class=" mt-5">
+                        <p class="text-uppercase header__nav_span fs-6  fw-bold">
+                            Your Watch your style
+                        </p>
+                        <h1 class="header__h1 w-75 ">
+                            Have You Ever Worn A Real Watch.
+                        </h1>
+                        <p class="mt-2 w-75 p-1 fw-bold header__nav__text_font_famile">The styles of watches available
+                            to
+                            consumers are endless and profit also endless. if you are Fashion Geek and have guts to sort
+                            out
+                            need related to </p>
+                        <div>
+                            <button class="btn  nav__btn-color text-light  m-1">
+                                GET STATED
+                            </button>
+                            <button class="btn border m-1 header__btn__color ">
+                                <i class="fab fa-apple"></i> gallery
+                            </button>
+                        </div>
+                    </div>
+
                 </div>
+
+
+
+                <div class="col-sm-6 col-12 d-flex align-items-center">
+
+                    <img src="./img/pngwing.png" alt="" class="w-100  mt-5 img__header">
+
+                </div>
+
             </div>
-            <img src="./img/pngwing.png" alt="" class="w-50 mt-5 img__header">
         </div>
+
+
         <br>
         <br>
     </header>
     <div class="container content">
         <div class=" text-center p-5 mt-2">
             <h1 class="content__h1_color fw-bolder text_font_sizes ">Our service Feature</h1>
-            <p class=" m-auto content__h1_color with_30 text-center media_our">Watch companies are now focusing more on trendy
+            <p class=" m-auto content__h1_color with_30 text-center media_our">Watch companies are now focusing more on
+                trendy
                 watches which targets the youngsters who always.</p>
         </div>
 
@@ -302,7 +340,7 @@
                         <p
                             class="content__border__icon_2 border text-center m-auto mt-1  d-flex align-items-center justify-content-around ">
                             <img src="./img/android.png" alt="" class="w-75 animation_stop ">
-                
+
                         </p>
                     </div>
                     <h6 class="fs-5 mt-4 m-auto color__black ">Android Version</h6>
@@ -376,9 +414,10 @@
 
     </div>
     <div class="container mt-5">
-        <div class="w-75">
+        <div class="w-75 m-auto">
             <p class="header__btn__color">
-                <i class="fab fa-apple"></i> Watch</p>
+                <i class="fab fa-apple"></i> Watch
+            </p>
             <h1 class="content__h1_color fw-bolder text_font_sizes ">
                 Our Available Product
             </h1>
@@ -389,30 +428,30 @@
 
         <div class="d-flex justify-content-between row gap-5 mt-5">
             <div class="w-25 img__rounded p-1 col-4">
-                <div class="img__rounded__child position-relative">
-                    <div class="child d-flex justify-content-around align-content-around">
+                <div  class="img__rounded__child position-relative">
+                    <button style="border: inset 1px white;" class="child d-flex justify-content-around align-content-around">
                         <i class="fas fa-plus mt-4 ms-5 fs-4"></i>
-                    </div>
-                    <img src="./img/Rectangle 42.png" alt="" class=" ">
+                    </button>
+                    <img src="./img/Rectangle 42.png" alt="" class="d-block m-auto ">
 
                 </div>
 
             </div>
             <div class="w-25 img__rounded p-1 col-4">
                 <div class="img__rounded__child1">
-                    <div class="child d-flex justify-content-around align-content-around">
+                    <button style="border: inset 1px white;" class="child d-flex justify-content-around align-content-around">
                         <i class="fas fa-plus mt-4 ms-5 fs-4"></i>
-                    </div>
-                    <img src="./img/Rectangle 43.png" alt="">
+                    </button>
+                    <img src="./img/Rectangle 43.png" alt="" class="d-block m-auto ">
                 </div>
 
             </div>
             <div class="w-25 img__rounded p-1 col-4">
                 <div class="img__rounded__child2">
-                    <div class="child d-flex justify-content-around align-content-around">
+                    <button style="border: inset 1px white;" class="child d-flex justify-content-around align-content-around">
                         <i class="fas fa-plus mt-4 ms-5 fs-4"></i>
-                    </div>
-                    <img src="./img/Rectangle 43 (1).png" alt="">
+                    </button>
+                    <img src="./img/Rectangle 43 (1).png" alt="" class="d-block m-auto ">
                 </div>
 
             </div>
@@ -420,7 +459,7 @@
     </div>
 
     <div class="container vido  d-flex justify-content-between align-items-center gap-5 ">
-        <div >
+        <div>
             <div class="vido_img_bag rounded-3">
                 <div class=" before_child d-flex justify-content-around align-items-center">
                     <div class=" icon_big d-flex justify-content-around align-items-center"><i
@@ -434,12 +473,15 @@
         <div>
             <div class="margin_vido_content">
                 <h1 class="content__h1_color fw-bolder text_font_sizes w-75">The best watch for your best time.</h1>
-                <p class="content__h1_color text-dark  p-2 fw-normal w-75 p_media_">Since the watch is such a popular Fashion
+                <p class="content__h1_color text-dark fs-6 p-2 fw-normal w-75 p_media_">Since the watch is such a popular
+                    Fashion
                     accessory and is seen as an essential wardrobe piece for both men and women.</p>
-                <button class="vido_btn_media_1 header__btn__color  shadow-0 btn border d-flex justify-content-around align-items-center">
+                <button
+                    class="vido_btn_media_1 header__btn__color d-flex gap-3  shadow-0 btn border d-flex align-items-center">
                     <div class=" icon_big icon_big2 d-flex justify-content-around align-items-center ">
-                        <i class="fas fa-play fs-5 icon"></i></div>
-                    <p class="mt-2">Play video</p>
+                        <i class="fas fa-play fs-5 icon"></i>
+                    </div>
+                    <p class="m-0">Play video</p>
                 </button>
             </div>
 
@@ -474,68 +516,68 @@
     <footer class="footer-section mt-5">
         <div class="container">
             <div class="footer-cta ">
-          
-            <div class="footer-content pt-5 pb-5">
-                <div class="row">
-                    <div class="col-xl-4 col-lg-4 mb-50">
-                        <div class="footer-widget">
-                            <div class="footer-logo">
-                              
-                            </div>
-                            <div class="footer-text">
-                                <div class="footer-widget-heading">
-                                <h3 class=" text-black">LOGO</h3>
+
+                <div class="footer-content pt-5 pb-5">
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-4 mb-50">
+                            <div class="footer-widget">
+                                <div class="footer-logo">
+
                                 </div>
-                                <p>Apple Watch and the
-                                    app on iPhone.</p>
-                            </div>
-                            <div class="footer-social-icon">
-                                <span class="text-black">Follow us</span>
-                                <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
-                                <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
-                                <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
+                                <div class="footer-text">
+                                    <div class="footer-widget-heading">
+                                        <h3 class=" text-black">LOGO</h3>
+                                    </div>
+                                    <p>Apple Watch and the
+                                        app on iPhone.</p>
+                                </div>
+                                <div class="footer-social-icon">
+                                    <span class="text-black">Follow us</span>
+                                    <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                                    <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                                    <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
-                        <div class="footer-widget">
-                            <div class="footer-widget-heading">
-                                <h3 class="text-black">Useful Links</h3>
+                        <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                            <div class="footer-widget">
+                                <div class="footer-widget-heading">
+                                    <h3 class="text-black">Useful Links</h3>
+                                </div>
+                                <ul>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">about</a></li>
+                                    <li><a href="#">services</a></li>
+                                    <li><a href="#">portfolio</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                    <li><a href="#">About us</a></li>
+                                    <li><a href="#">Our Services</a></li>
+                                    <li><a href="#">Expert Team</a></li>
+                                    <li><a href="#">Contact us</a></li>
+                                    <li><a href="#">Latest News</a></li>
+                                </ul>
                             </div>
-                            <ul>
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">about</a></li>
-                                <li><a href="#">services</a></li>
-                                <li><a href="#">portfolio</a></li>
-                                <li><a href="#">Contact</a></li>
-                                <li><a href="#">About us</a></li>
-                                <li><a href="#">Our Services</a></li>
-                                <li><a href="#">Expert Team</a></li>
-                                <li><a href="#">Contact us</a></li>
-                                <li><a href="#">Latest News</a></li>
-                            </ul>
                         </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
-                        <div class="footer-widget">
-                            <div class="footer-widget-heading">
-                                <h3 class="text-black">Subscribe</h3>
-                            </div>
-                            <div class="footer-text mb-25">
-                                <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
-                            </div>
-                            <div class="subscribe-form">
-                                <form action="#">
-                                    <input type="text" placeholder="Email Address">
-                                 
-                                </form>
+                        <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                            <div class="footer-widget">
+                                <div class="footer-widget-heading">
+                                    <h3 class="text-black">Subscribe</h3>
+                                </div>
+                                <div class="footer-text mb-25">
+                                    <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+                                </div>
+                                <div class="subscribe-form">
+                                    <form action="#">
+                                        <input type="text" placeholder="Email Address">
+
+                                    </form>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        
+
     </footer>
 
 
